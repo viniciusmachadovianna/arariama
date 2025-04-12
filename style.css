@@ -1,0 +1,8 @@
+:root{
+    --dark-mode: #303030;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--dark-mode);
+}
