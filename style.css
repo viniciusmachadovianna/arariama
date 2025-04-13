@@ -1,8 +1,44 @@
+@font-face {
+    font-family: 'Slackey';
+    src: url('assets/fonts/Slackey-Regular.ttf') format('truetype');
+}
 :root{
-    --dark-mode: #303030;
+    --dark-mode: #eee;
+}
+[data-theme="light"]{
+    --bg: #eeeeee;
+    --text: #333333;
+    --dec: #c0fc0f;
+}
+[data-theme="dark"]{
+    --bg: #333333;
+    --text: #eeeeee;
+    --dec: #ff7f90;
+}
+.teste{
+    stroke: var(--text);
 }
 body{
     margin: 0;
     padding: 0;
-    background-color: var(--dark-mode);
+    background-color: var(--bg);
+    color: var(--text);
+    position: relative;
+    width: 100%;
+    height: fit-content;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    &>#logotipo>h1{
+        font-family: "Slackey", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
 }
