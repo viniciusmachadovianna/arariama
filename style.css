@@ -5,12 +5,12 @@
 :root{
     --dark-mode: #eee;
 }
-[data-theme="light"]{
+[data-tema="claro"]{
     --bg: #eeeeee;
     --text: #333333;
     --dec: #c0fc0f;
 }
-[data-theme="dark"]{
+[data-tema="escuro"]{
     --bg: #333333;
     --text: #eeeeee;
     --dec: #ff7f90;
@@ -41,4 +41,14 @@ header{
         font-weight: 400;
         font-style: normal;
     }
+}
+/*  */
+footer{
+    display: flex;
+    flex-flow: row wrap;
+}
+#contato{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
 }
