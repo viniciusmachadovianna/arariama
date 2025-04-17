@@ -31,19 +31,64 @@
     </header>
     <main>
         <section id="procurados">
+            <span class="tituloSecao">MAIS PROCURADOS</span>
             <div><img src="" alt=""><span></span></div>
             <div><img src="" alt=""><span></span></div>
             <div><img src="" alt=""><span></span></div>
             <div><img src="" alt=""><span></span></div>
+            <!-- <div class="carousel-container">
+                
+                <div class="carousel-track" id="carouselTrack">
+                    <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&h=300');"></div>
+                    <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=600&h=300');"></div>
+                    <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=600&h=300');"></div>
+                </div>
+                <div class="carousel-buttons">
+                    <button onclick="moveSlide(-1)">⟨</button>
+                    <button onclick="moveSlide(1)">⟩</button>
+                </div>
+            </div> -->
         </section>
         <section id="destaques">
-            <div><img src="" alt="Destaque da sessão de livros de bolso e boxes"><span></span></div>
-            <div><img src="" alt="Destaque da sessão de livros por menos de R$10,00"><span></span></div>
-            <div><img src="" alt="Destaque da sessão de livros clássicos"><span></span></div>
+            <div>
+                <img src="assets/icons/cupom.svg" alt="Destaque da sessão de livros de bolso e boxes">
+                <span>Cabem no bolso! Confira os livros pocket aqui.</span>
+            </div>
+            <div>
+                <img src="assets/icons/cupom.svg" alt="Destaque da sessão de livros por menos de R$10,00">
+                <span>NO PRECINHO, SOMENTE r$10,00</span>
+            </div>
+            <div>
+                <img src="assets/icons/cupom.svg" alt="Destaque da sessão de livros clássicos">
+                <span>LIVROS CLÁSSICOS</span>
+            </div>
         </section>
-        <section id="editoras" class="carrossel"></section>
-        <section id="livros"></section>
-        <section id="autores" class="carrossel"></section>
+        <section id="editoras" class="carrossel">
+            <span>EDITORAS</span>
+            <button><img src="assets/icons/esquerda.svg" alt=""></button>
+            <div></div>
+            <div></div>
+            <div></div>
+            <button><img src="assets/icons/direita.svg" alt=""></button>
+        </section>
+        <section id="livros">
+            <span>LIVROS</span>
+            <div class="cartaoLivro">
+                <span class="tituloLivro">EXEMPLO 1</span>
+                <img src="assets/livros/sem-capa.jpg" alt="">
+                <span class="descricaoLivro">Uma firula qualquer, por enquanto</span>
+            </div>
+            <div class="cartaoLivro">
+                <span class="tituloLivro">EXEMPLO 2</span>
+                <img src="assets/livros/tree-mobile.jpg" alt="">
+                <span class="descricaoLivro">Outra lorota do balacobaco</span>
+            </div>
+            <button>VER MAIS</button>
+        </section>
+        <section id="autores" class="carrossel">
+            <span>AUTORES</span>
+
+        </section>
         <section id="benefícios">
             <div><img src="" alt=""><span></span></div>
             <div><img src="" alt=""><span></span></div>
@@ -51,14 +96,45 @@
         </section>
     </main>
     <footer>
-        <section id="navegacao"></section>
-        <section id="ajuda"></section>
-        <section id="pagamentos"></section>
-        <section id="social"></section>
+        <ul id="navegacao">
+            <li>a</li>
+            <li>a</li>
+            <li>a</li>
+        </ul>
+        <ul id="ajuda">
+            <li>b</li>
+            <li>b</li>
+            <li>b</li>
+        </ul>
+        <ul id="pagamentos">
+            <li>c</li>
+            <li>c</li>
+            <li>c</li>
+        </ul>
+        <ul id="social">
+            <li>d</li>
+            <li>d</li>
+            <li>d</li>
+        </ul>
     </footer>
-    <button id="contato">
+    <a href="http://wa.me/5532991689464?text=Oi%20Vinicius,%20vim%20do%20Arariama! Pode me ajudar?" target="_blank" rel="noopener noreferrer" id="contato">
         <img style="width: 50px;" src="assets/icons/whatsapp.png" alt="Botão do WhatsApp">
-    </button>
+    </a>
 </body>
+<script>
+    let currentIndex = 0;
+    const track = document.getElementById('carouselTrack');
+    const items = document.querySelectorAll('.carousel-item');
+    const totalItems = items.length;
+
+    function moveSlide(direction) {
+      currentIndex += direction;
+      if (currentIndex < 0) currentIndex = totalItems - 1;
+      if (currentIndex >= totalItems) currentIndex = 0;
+
+      const offset = -currentIndex * 100;
+      track.style.transform = `translateX(${offset}%)`;
+    }
+</script>
 <script src="script.js"></script>
 </html>

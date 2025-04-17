@@ -1,0 +1,80 @@
+{
+    "livros": [
+        {
+            "id":1,
+            "titulo": "Vagabond 2",
+            "subtitulo": "A história de Musashi",
+            "autor": {
+                "nome": "Takehiko",
+                "sobrenome": "Inoue"
+            },
+            "editora":"Conrad Livros",
+            "ISBN":"85-7616-109-5",
+            "genero":[
+                "Ação",
+                "Artes marciais",
+                "Drama",
+                "Filosofia",
+                "Histórico"
+            ],
+            "idioma":"Português",
+            "ano_publicacao": 2005,
+            "descricao":"n/a",
+            "paginas":0,
+            "capa_url":"link",
+            "volume":"2",
+            "valor":10
+        },
+        {
+            "id":2,
+            "titulo": "A Marca de Atena",
+            "subtitulo": "Os heróis do Olimpo",
+            "autor": {
+                "nome": "Rick",
+                "sobrenome": "Riordan"
+            },
+            "editora":"Intrínseca",
+            "ISBN":"978-85-8057-310-7",
+            "genero":[
+                "Ação",
+                "Aventura",
+                "Drama",
+                "Fantasia",
+                "Juvenil",
+                "Mitologia"
+            ],
+            "idioma":"Português",
+            "ano_publicacao": 2013,
+            "descricao":"",
+            "paginas":480,
+            "capa_url":"link",
+            "volume":"3",
+            "valor":15
+        },
+        {
+            "id":3,
+            "titulo": "A morte é um dia que vale a pena viver",
+            "subtitulo": "",
+            "autor": {
+                "nome": "   ",
+                "sobrenome": "Quintana Arantes"
+            },
+            "editora":"Sextante",
+            "ISBN":"978-85-413-0839-1",
+            "genero":[
+                "Autoajuda",
+                "Ensaios",
+                "Espiritualidade",
+                "Psicologia",
+                "Saúde"
+            ],
+            "idioma":"Português",
+            "ano_publicacao": 2019,
+            "descricao":"",
+            "paginas":144,
+            "capa_url":"link",
+            "volume":"1",
+            "valor":5
+        }
+    ]
+}
