@@ -59,9 +59,12 @@ Lá no Github, crie um Pull Request desse branch para Main.
 - Item 1
 - Item 2
 
+Reunião 16/04/25 com cliente:
 
-- [ ] Check 1
-- [ ] Check 2
+- [ ] Mesclar aba de destaques com o de mais procurados usando um mosaico de 2 colunas, coluna #1 com 2 linhas e 2 cards estáticos e a coluna #2 com um carrossel passando livros e autores mais procurados
+- [ ] Inverter seção Autores e Editoras
+- [ ] Adicionar grid de gêneros
+- [ ] Atalhos na página inicial para filtros pré-definidos na lista de livros
 
 > Citação
 
